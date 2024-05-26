@@ -58,10 +58,13 @@ export default async function DashboardPage() { // Notar que el componente que s
         {/* 
           Suspense: Le indicamos que lo que envolvemos es Asyncrono y lo vamos a esperar
           Fallback: Mientras esperamos, se muestra lo que queremos
+          El fetch se hace dentro del componentes
         */}
         <Suspense fallback={<RevenueChartSkeleton/>}>
           <RevenueChart />
         </Suspense>
+
+        {/* Forma Tradicional sin suspense */}
         <LatestInvoices latestInvoices={latestInvoices} />
       </div>
     </main>
