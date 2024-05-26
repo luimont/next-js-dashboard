@@ -1,3 +1,6 @@
+// Este archivo es para crear la base de datos y poblar la misma con datos para poder utilizar
+// Para ejecutarlo, se ha creado en el package.json: "seed": "node -r dotenv/config ./scripts/seed.js"
+
 const { db } = require('@vercel/postgres');
 const {
   invoices,

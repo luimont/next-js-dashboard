@@ -1,0 +1,14 @@
+/*
+El nombre ".module" es Importante para indicarle que queremos utilizar css modules
+
+CSS Modules, al dar inspeccionar en la web, veremos que genera automaticamente un identificador unico de clase en lugar de solo '.shape'
+*/
+
+/* Crear triangulo unicamente con CSS */
+.shape { 
+  height: 0;
+  width: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid black;
+}
