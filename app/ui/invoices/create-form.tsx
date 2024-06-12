@@ -9,7 +9,9 @@ import {
 import { Button } from '@/app/ui/button';
 import { createInvoice } from '@/app/lib/actions';
 
+
 export default function Form({ customers }: { customers: CustomerField[] }) {
+  const isEnableCreate = false
   return (
     <form action={createInvoice}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -106,7 +108,8 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         >
           Cancel
         </Link>
-        <Button type="submit">Create Invoice</Button>
+        <Button type="submit" style={{display:'none'}}>Create Invoice</Button>
+        {/* Esto no es seguro xq se podria utilizar el boton de igual manera, es solo para modo ejemplo */}
       </div>
     </form>
   );
